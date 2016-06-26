@@ -1,0 +1,32 @@
+function test {
+  for i <- 0 | i < 10 | i <- i + 1 {
+    print i
+    print #i
+  }
+}
+function test2 print '----'
+call test2
+
+function test3 {
+  if #x =-= 1 then
+    print '1'
+  else
+    print '0'
+}
+
+print 'under-function-test3'
+#x <- 1
+test3()
+#x <- 0
+test3() 
+
+get <- input
+print get
+
+a <- 1
+b <- 1
+print a =!= b
+print 'test'
+print a
+
+print a && b

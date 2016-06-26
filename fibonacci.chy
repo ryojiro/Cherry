@@ -1,0 +1,14 @@
+function fibonacci {
+  x <- 1  
+  y <- 1
+  if #outputNum =!= 0 then print 1
+  for i <- 0| i < #outputNum - 1| i <- i + 1 {
+    print x
+    temp <- x
+    x <- y
+    y <- temp
+    x <- x + y
+  }
+}
+#outputNum <- input 
+fibonacci()
